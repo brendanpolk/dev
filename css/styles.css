@@ -208,6 +208,23 @@ a:hover#menu-icon {
 
 
 
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+#hero {
+	width: 100%;
+	text-align: center;
+	margin-top: 125px;
+	border-bottom: 2px solid #FFF;
+	padding-bottom: 50px;
+}
+
+#hero h1 {
+	margin: 0;
+}
+
+
 
 
 /* ==========================================================================
@@ -216,7 +233,7 @@ a:hover#menu-icon {
 
 #grid-container {
 	width: 100%;
-	margin-top: 125px;
+	margin-top: 75px;
 	overflow: hidden;
 }
 
@@ -233,6 +250,10 @@ a:hover#menu-icon {
 }
 
 .grid-item-container:hover .item-title {
+	display: block;
+}
+
+a.grid-item-container {
 	display: block;
 }
 
