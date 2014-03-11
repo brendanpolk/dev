@@ -1,0 +1,804 @@
+/*
+Theme Name: brendanpolk
+Theme URI: 
+Description: This theme was created by Brendan Polk explicitly for use on brendanpolk.com
+Version: 1.0
+Author: Brendan Polk
+Author URI: http://www.brendanpolk.com
+*/
+
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+
+
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+body { 
+	font-size: 1.25em;
+	font-family: "alternate-gothic-no-1-d",, sans-serif;
+	font-weight: 200;
+	background: #f1f1f2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "alternate-gothic-no-1-d", sans-serif;
+	text-transform: uppercase;
+}
+
+p, a, ul, li, strong {
+	font-family: "proxima-nova";
+}
+
+a {
+	color: #52bad5;
+	font-size: 1em;
+}
+
+a:hover {
+}
+
+section {
+	margin: 0 auto;
+	max-width: 1170px;
+
+}
+
+h1 {
+	font-size: 3.25em;
+	color: #595959;
+	line-height: 1.15em;
+	margin: 25px 0px 25px 0px;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 200;
+	color: #595959;
+}
+
+h3 {
+ 	font-size: 1.5em;
+ 	font-weight: 200;
+ 	color: #595959;
+}
+
+
+p {
+	line-height: 37px;
+	margin-bottom: 20px;
+	font-size: 1.25em;
+	font-weight: 200;
+	color: #595959;
+}
+
+strong {
+	line-height: 37px;
+	margin-bottom: 20px;
+	font-size: 1.25em;
+	font-weight: 400;
+	color: #595959;
+}
+
+
+img {
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+	float: left;
+	padding: 10px
+}
+
+hr {
+	margin: 50px 0px 50px 0px;
+	border: 1px solid #FFF;
+}
+
+
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+	background: #ffffff;
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	opacity: 0.95;
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+	   -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+	        box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+}
+
+#header-container {
+	max-width: 1170px;
+	position:relative;
+	margin: 0 auto;
+}
+
+header a {
+	font-family: "alternate-gothic-no-1-d", sans-serif;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	margin-top: 4px;
+	color:#595959;
+}
+
+header a:hover {
+	line-height: 1em;
+}
+
+li a {
+	color:#595959;
+}
+
+li a:hover {
+	border-bottom: 2px solid #52bad5;
+}
+
+#logo {
+	margin: 10px 10px 10px 0px;
+	float: left;
+	width: 50px;
+	height: 50px;
+	-moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+	background: #52bad5 no-repeat center;
+	display: block;
+	text-decoration: none;
+}
+
+#logo:hover {
+	opacity: 0.3;
+}
+
+#logo p {
+	font-family: "alternate-gothic-no-1-d", sans-serif;
+	color: #FFF;
+	text-align: center; 
+	font-size: 1.25em;
+	text-decoration: none;
+	margin-top: 8px;
+	margin-left: 3px;
+}
+
+#logo p:hover {
+	color: #FFF;
+}
+
+#logo a {
+	text-decoration: none;
+}
+
+#logo a:hover {
+	opacity: 0.3;
+}
+
+#logo img {
+	width: 100%;
+}
+
+nav {
+	float: right;
+	padding-top: 13px;	
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 1.15em;
+	letter-spacing: .5px;
+	color: #595959;
+}
+
+#menu-icon {
+	display: hidden;
+	width: 30px;
+	height: 20px;
+	background: url(../img/menu-icon2.png) center;
+}
+
+a:hover#menu-icon {
+	opacity: 0.3;
+}
+
+.current {
+	color: #595959;
+	font-weight: 300;
+	border-bottom: 2px solid #52bad5;
+	line-height: 1em;
+}
+
+
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+#hero {
+	width: 100%;
+	text-align: center;
+	margin-top: 125px;
+	border-bottom: 2px solid #FFF;
+	padding-bottom: 50px;
+}
+
+#hero h1 {
+	margin: 0;
+	padding-top: 50px;
+	font-size: 6em;
+}
+
+#hero p {
+	padding-bottom: 50px;
+	font-size: 2em;
+}
+
+
+
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+#grid-container {
+	width: 100%;
+	margin-top: 75px;
+	overflow: hidden;
+}
+
+.grid-item-container {
+	width: 24%;
+	position: relative;
+	float: left;
+	margin: 0 auto;
+	margin: 5px;
+}
+
+.grid-item {
+	width: 100%;
+}
+
+.grid-item-container:hover .item-title {
+	display: block;
+}
+
+a.grid-item-container {
+	display: block;
+}
+
+.item-title {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	float: left;
+	top: 0;
+	left: 0;
+	color: #FFF;
+	background-color: #52bad5;
+	z-index: 9999;
+}
+
+.item-title h1{
+	font-family: "alternate-gothic-no-1-d", sans-serif;
+	text-transform: uppercase;
+	color: #FFF;
+	line-height: 1em;
+	padding: 0px 10px 10px 10px;
+}
+
+.item-title p{
+	font-size: 1.5em;
+	padding: 10px;
+}
+
+.item-title a {
+	color: #FFF;
+	padding: 10px;
+	text-decoration: none;
+}
+
+
+
+
+
+/* ==========================================================================
+   Work Section
+   ========================================================================== */
+
+#work-section {
+	margin: 0 auto;
+	padding-top: 125px;
+	width: 100%;
+	max-width: 1170px;
+}
+
+.work-description h1 {
+	font-size: 3em;
+	font-weight: 300;
+	border-bottom: 2px solid #fbe343;
+}
+
+.work-description p {
+	font-size: 1.25em;
+	line-height: 37px;
+	color: #595959;
+}
+
+.work-area {
+	margin-top: 40px;
+}
+
+.work-nav {
+}
+
+.work-img {
+	margin-top: 40px;
+}
+
+.work-img-half {
+	width: 50%;
+	margin-top: 40px;
+}
+
+
+
+/* ==========================================================================
+   About Section
+   ========================================================================== */
+.about-photo {
+	width: 25%;
+}
+
+.about-photo img{
+	width: 150px;
+	height: 150px;
+	-moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+}
+
+.about-description {
+	width: 100%;
+}
+
+.about-description p {
+	line-height: 37px;
+}
+
+
+
+/* ==========================================================================
+   Contact Form
+   ========================================================================== */
+
+#contact-section {
+	margin: 0 auto;
+	padding-top: 125px;
+	width: 100%;
+	max-width: 1170px;
+ }
+
+.contact-description {
+	width: 100%;
+}
+
+.contact-description h1 {
+	font-size: 3em;
+	font-weight: 300;
+	border-bottom: 2px solid #fbe343;
+}
+
+.contact-description p {
+	font-size: 1.25em;
+	line-height: 37px;
+	color: #595959;
+}
+
+.form {
+	width: 50%;
+}
+
+.form input {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 15px;
+	border: none;
+	float: right;
+	font-size: 1em;
+	color: #595959;
+	background-color: #FFF;
+	border-radius: 5px;
+}
+
+input {
+	font-family: "proxima-nova";
+	font-weight: 200;
+	text-align: top;
+}
+
+#message-box {
+	width: 100%;
+	height: 200px;
+	text-align: top;
+	font-family: "proxima-nova";
+	font-weight: 200;
+	margin-bottom: 15px;
+	border: none;
+	float: right;
+	font-size: 1em;
+	color: #595959;
+	background-color: #FFF;
+	border-radius: 5px;
+}
+
+.submit-button button {
+	width: 200px;
+	height: 50px;
+	background-color: #52bad5;
+	color: #FFF;
+	border: none;
+	position: absolute:
+    top: 50%;
+	margin: 20px 0px 20px 0px;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+    -webkit-border-radius: 10px; 
+}
+
+.submit-button button p {
+	font-size: 3em;
+	font-family: "alternate-gothic-no-1-d", sans-serif;
+	text-transform: uppercase;
+	color: #FFF;
+	margin-top: 8px;
+}
+
+.submit-button button:hover {
+	opacity: 0.3;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+	width: 100%;
+	max-width: 1170px;
+	border-top: 2px solid #FFF;
+	margin: 0 auto;
+	margin-top: 100px;
+	position: relative;
+}
+
+.footer-right {
+	width: 50%;
+	text-align: right;
+	float: right;
+	color: #595959;
+	font-size: 10px;
+	margin-top: 20px;
+}
+
+.footer-left {
+	width: 50%;
+	margin-top:20px;
+}
+
+.footer-left img {
+	display: inline;
+	width: 20px;
+	margin-right: 8px;
+}
+
+.footer-left img:hover {
+	opacity: 0.3;
+}
+
+
+
+/* ==========================================================================
+   
+
+
+
+
+   Media Queries
+
+
+
+
+
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    /* tablets and desktop */
+    #grid-container {
+		width: 100%;
+		margin-left: 10px;
+	}
+
+	.grid-item-container {
+		width: 23%;
+		margin: 0 auto;
+		margin: 5px;
+	}
+
+	.grid-item {
+		width: 100%;
+	}
+
+	.grid-item-container:hover .item-title {
+		display: block;
+	}
+
+	.item-title h1 {
+		text-align: left;
+		top: 0;
+		left: 0;
+		position: absolute;
+		font-size: 2em;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    #menu-icon {
+		display:inline-block;
+		width: 20px;
+		height: 20px;
+		margin-right: 20px;
+	}
+
+	#logo {
+		width: 40px;
+		height: 40px;
+		margin: 4px 2px 2px 10px;
+	}
+
+	#logo p {
+		font-size: 1em;
+		text-align: center;
+		margin-top: 4px;
+	}
+
+	nav ul, nav:active ul { 
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		right: 10px;
+		top: 52px;
+		width: 90%;
+		border-radius: 4px 0 4px 4px;
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	nav:hover ul {
+		display: block;
+	}
+
+	header {
+		height: 50px;
+	}
+
+	section {
+	}
+
+	#grid-container {
+		width: 100%;
+		text-align: center;
+		margin-left: 5px;
+		margin-top: 70px;
+	}
+
+	.grid-item-container {
+		width: 23%;
+		margin: 0 auto;
+		margin: 5px;
+	}
+
+	.grid-item {
+		width: 100%;
+	}
+
+	.grid-item-container:hover .item-title {
+		display: block;
+	}
+
+	.item-title h1 {
+		font-size: 1.5em;
+		text-align: left;
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+
+	
+	.footer-right {
+		width: 100%;
+		text-align: center;
+		color: #595959;
+		font-size: 10px;
+		margin-top: 20px;
+	}
+
+	.footer-left {
+		width: 100%;
+		margin-top:0px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+
+	#logo {
+		margin-left: 10px;
+	}
+
+	#logo p {
+		margin-top: 4px;
+		margin-left: 2px;
+	}
+
+    #menu-icon {
+		display:inline-block;
+		margin-right: 20px;
+	}
+
+	nav ul, nav:active ul { 
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		right: 10px;
+		top: 52px;
+		width: 84%;
+		border-radius: 4px 0 4px 4px;
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	nav:hover ul {
+		display: block;
+	}
+
+	#hero {
+		display:none;
+	}
+
+
+	#grid-container {
+		width: 100%;
+		text-align: center;
+		margin-left: 8px;
+		margin-top: 70px;
+	}
+
+	.grid-item-container {
+		width: 45%;
+		margin: 0 auto;
+		margin: 5px;
+	}
+
+	.grid-item {
+		width: 100%;
+	}
+
+	.grid-item-container:hover .item-title {
+		display: block;
+	}
+
+	.item-title h1 {
+		font-size: 1.75em;
+		text-align: left;
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+
+	#contact-section {
+		margin: 0 auto;
+		margin-left: 15px;
+		padding-top: 70px;
+		width: 90%;
+	 }
+
+	.contact-description {
+		width: 100%;
+	}
+
+	.contact-description p {
+		font-size: 1em;
+		font-weight: 300;
+	}
+
+	.contact-descripton h1 {
+		line-height: .95em;
+	}
+
+	.form {
+	width: 100%;
+}
+
+	#work-section {
+		margin: 0 auto;
+		margin-left: 15px;
+		padding-top: 70px;
+		width: 90%;
+	}
+
+	.work-description {
+		width: 100%;
+	}
+
+	.work-description p {
+		font-size: 1em;
+		font-weight: 300;
+	}
+
+	.work-description h1 {
+		line-height: .95em;
+	}
+
+	.footer-right {
+		width: 100%;
+		text-align: center;
+		color: #595959;
+		font-size: 10px;
+		margin-top: 20px;
+	}
+
+	.footer-left {
+		width: 100%;
+		margin-top:0px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
