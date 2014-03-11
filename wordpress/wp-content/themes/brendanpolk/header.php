@@ -41,6 +41,23 @@
 	<?php endif; ?>
 
 	<header id="masthead" class="site-header" role="banner">
+
+        <div id="header-container"><!-- BEGIN COPIED HEADER -->
+            <div id="logo-container">
+    		  <a href="index.html" id="logo"><p>BP</p></a>
+            </div>
+
+            <nav>
+    			<a href="index.html" id="menu-icon"></a>
+    			<ul>
+    				<li><a href="index.html" class="current">Home</a></li>
+    				<li><a href="about.html">About</a></li>
+    				<li><a href="resume.html">Resume</a></li>
+    				<li><a href="contact.html">Contact</a></li>
+    			</ul>
+    		</nav>
+        </div><!-- END HEADER -->
+
 		<div class="header-main">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
